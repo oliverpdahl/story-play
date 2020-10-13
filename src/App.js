@@ -5,8 +5,9 @@ import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 function App() {
   return (
-    <div className="text-center">
-      <Jumbotron fluid>
+    <div className="text-center" style={{height:1000}}>
+      <div className="m-4">
+      <Jumbotron>
         <Container>
           <h1>StoryPlay</h1>
           <p>
@@ -14,7 +15,8 @@ function App() {
           </p>
         </Container>
       </Jumbotron>
-      <Button variant="outline-info" size="lg" block>START</Button>
+      <Button variant="info" size="lg" block className=''>START</Button>
+      </div>
     </div>
   );
 }
