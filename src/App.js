@@ -1,22 +1,20 @@
 import React from 'react';
-import AlertDismissible from './AlertDismissibleAndButton.js';
 import './App.css';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
-
+import Button from 'react-bootstrap/Button';
 function App() {
   return (
-    <div>
+    <div className="text-center">
       <Jumbotron fluid>
         <Container>
-          <h1>Fluid jumbotron</h1>
+          <h1>StoryPlay</h1>
           <p>
-            This is a modified jumbotron that occupies the entire horizontal space of
-            its parent.
+            Learn about careers while playing
           </p>
         </Container>
       </Jumbotron>
-      <AlertDismissible/>
+      <Button variant="outline-info" size="lg" block>START</Button>
     </div>
   );
 }
