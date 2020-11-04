@@ -1,24 +1,25 @@
-import React from 'react';
-import './App.css';
-import Jumbotron from 'react-bootstrap/Jumbotron';
-import Container from 'react-bootstrap/Container';
-import Button from 'react-bootstrap/Button';
-function App() {
+import React from "react";
+import "./App.css";
+import { Link, Route, Switch, BrowserRouter as Router } from "react-router-dom";
+import LandingPage from "./LandingPage";
+
+export default function App() {
   return (
-    <div className="text-center" style={{height:1000}}>
-      <div className="m-4">
-      <Jumbotron>
-        <Container>
-          <h1>StoryPlay</h1>
-          <p>
-            Learn about careers while playing
-          </p>
-        </Container>
-      </Jumbotron>
-      <Button variant="info" size="lg" block className=''>START</Button>
+    <Router>
+      <div>
+        <nav className="navbar navbar-light">
+          <ul className="nav navbar-nav">
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+          </ul>
+        </nav>
+
+        {/* Route components are rendered if the path prop matches the current URL */}
+        <Route path="/">
+          <LandingPage />
+        </Route>
       </div>
-    </div>
+    </Router>
   );
 }
-
-export default App;
