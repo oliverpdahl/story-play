@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function CareersPage() {
   return (
     <div className="px-5">
-      <Link to="/">
+      <Link to="/explore">
         <div className="py-3">
           <Button
             block
