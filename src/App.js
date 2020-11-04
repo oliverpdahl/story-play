@@ -10,7 +10,9 @@ export default function App() {
   return (
     <Router>
       <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#home">StoryPlay</Navbar.Brand>
+        <Link to="/">
+          <Navbar.Brand href="#home">StoryPlay</Navbar.Brand>
+        </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
