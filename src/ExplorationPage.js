@@ -14,8 +14,11 @@ const popover = (
 
 function ExplorationPage(props) {
   return (
-    <div style={{ height: "100vh" }} className="align-middle">
-      <Container className="align-middle">
+    <div
+      style={{ height: "100vh", width: "100%" }}
+      className="align-middle pt-5"
+    >
+      <Container className="align-middle" style={{ maxWidth: "650px" }}>
         <Row>
           <Col xs={6}>
             <OverlayTrigger
