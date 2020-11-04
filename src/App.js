@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import { Link, Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import LandingPage from "./LandingPage";
+import CareersPage from "./CareersPage";
 
 export default function App() {
   return (
@@ -16,7 +17,10 @@ export default function App() {
         </nav>
 
         {/* Route components are rendered if the path prop matches the current URL */}
-        <Route path="/">
+        <Route path="/careers">
+          <CareersPage />
+        </Route>
+        <Route path="/" exact>
           <LandingPage />
         </Route>
       </div>
