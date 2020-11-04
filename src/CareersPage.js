@@ -1,12 +1,42 @@
 import React from "react";
+import lion from "./images/lion.png";
 import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 
 export default function CareersPage() {
   return (
-    <div>
-      <Button>Button 1</Button>
-      <Button>Button 2</Button>
-      <Button>Button 3</Button>
+    <div className="px-5">
+      <Link to="/">
+        <div className="py-3">
+          <Button
+            block
+            style={{ height: "20vh", maxWidth: "650px" }}
+            className="btn-info mx-auto"
+          >
+            <img src={lion} style={{ height: "18vh" }} alt="Marine Biologist" />
+          </Button>
+        </div>
+      </Link>
+      <div className="py-3">
+        <Button block style={{ height: "20vh" }} className="btn-info">
+          <img src={lion} style={{ height: "18vh" }} alt="Marine Biologist" />
+        </Button>
+      </div>
+      <div className="py-3">
+        <Button block style={{ height: "20vh" }} className="btn-info">
+          <img src={lion} style={{ height: "18vh" }} alt="Marine Biologist" />
+        </Button>
+      </div>
+      <div>
+        Icons made by{" "}
+        <a href="https://www.flaticon.com/authors/freepik" title="Freepik">
+          Freepik
+        </a>{" "}
+        from{" "}
+        <a href="https://www.flaticon.com/" title="Flaticon">
+          www.flaticon.com
+        </a>
+      </div>
     </div>
   );
 }
