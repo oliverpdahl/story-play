@@ -17,16 +17,29 @@ export default function CareersPage() {
           </Button>
         </div>
       </Link>
-      <div className="py-3">
-        <Button block style={{ height: "20vh" }} className="btn-info">
-          <img src={lion} style={{ height: "18vh" }} alt="Marine Biologist" />
-        </Button>
-      </div>
-      <div className="py-3">
-        <Button block style={{ height: "20vh" }} className="btn-info">
-          <img src={lion} style={{ height: "18vh" }} alt="Marine Biologist" />
-        </Button>
-      </div>
+      <Link to="/explore">
+        <div className="py-3">
+          <Button
+            block
+            style={{ height: "20vh", maxWidth: "650px" }}
+            className="btn-info mx-auto"
+          >
+            <img src={lion} style={{ height: "18vh" }} alt="Marine Biologist" />
+          </Button>
+        </div>
+      </Link>
+      <Link to="/explore">
+        <div className="py-3">
+          <Button
+            block
+            style={{ height: "20vh", maxWidth: "650px" }}
+            className="btn-info mx-auto"
+          >
+            <img src={lion} style={{ height: "18vh" }} alt="Marine Biologist" />
+          </Button>
+        </div>
+      </Link>
+
       <div>
         Icons made by{" "}
         <a href="https://www.flaticon.com/authors/freepik" title="Freepik">
