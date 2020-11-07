@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.css";
 import { Link, Route, Switch, BrowserRouter as Router } from "react-router-dom";
-import LandingPage from "./LandingPage";
-import CareersPage from "./CareersPage";
-import ExplorationPage from "./ExplorationPage";
+import LandingPage from "./components/LandingPage";
+import CareersPage from "./components/CareersPage";
+import ExplorationPage from "./components/ExplorationPage";
 import { Navbar, Nav } from "react-bootstrap";
 
 export default function App() {
