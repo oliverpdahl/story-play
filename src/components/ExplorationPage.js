@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import lion from "./images/lion.png";
+import lion from "../images/lion.png";
 import { Container, Row, Col, Popover, OverlayTrigger } from "react-bootstrap";
 const popover = (
   <Popover id="popover-basic">

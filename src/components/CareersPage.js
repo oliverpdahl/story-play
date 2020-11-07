@@ -1,5 +1,5 @@
 import React from "react";
-import lion from "./images/lion.png";
+import lion from "../images/lion.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 
