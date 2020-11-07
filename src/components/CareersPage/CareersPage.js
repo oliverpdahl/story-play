@@ -7,11 +7,11 @@ import { Careers } from "../../data/Careers";
 import FlaticonAttribution from "../FlaticonAttribution";
 
 const listButtons = () => {
-  return Object.keys(Careers).map((career) => (
+  return Careers.map((career) => (
     <CareerButton
-      to={Careers[career].slug}
-      title={Careers[career].title}
-      image={Careers[career].buttonImg}
+      to={career.slug}
+      title={career.title}
+      image={career.buttonImg}
     />
   ));
 };

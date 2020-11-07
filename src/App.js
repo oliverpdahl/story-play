@@ -3,8 +3,9 @@ import "./App.css";
 import { Link, Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import LandingPage from "./components/LandingPage";
 import CareersPage from "./components/CareersPage/CareersPage";
-import ExplorationPage from "./components/ExplorationPage";
+import ExplorationPage from "./components/ExplorationPage/ExplorationPage";
 import NavBar from "./components/Navbar/NavBar";
+import { Careers } from "./data/Careers";
 
 export default function App() {
   return (
@@ -15,9 +16,15 @@ export default function App() {
         <Route path="/careers">
           <CareersPage />
         </Route>
-        <Route path="/explore">
-          <ExplorationPage />
-        </Route>
+        <Route
+          exact
+          path="/explore/:slug"
+          render={({ match }) => (
+            <ExplorationPage
+              career={Careers.find((c) => c.slug === match.params.slug)}
+            />
+          )}
+        ></Route>
         <Route path="/" exact>
           <LandingPage />
         </Route>
