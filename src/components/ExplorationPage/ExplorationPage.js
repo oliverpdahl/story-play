@@ -1,7 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
-import lion from "../../images/lion.png";
-import { Container, Row, Col, Popover, OverlayTrigger } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import ExploreImage from "./ExploreImage";
 import FlaticonAttribution from "../FlaticonAttribution";
 
@@ -35,7 +33,5 @@ function ExplorationPage(props) {
     </div>
   );
 }
-
-ExplorationPage.propTypes = {};
 
 export default ExplorationPage;

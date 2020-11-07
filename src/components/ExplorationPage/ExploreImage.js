@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Container, Row, Col, Popover, OverlayTrigger } from "react-bootstrap";
+import { Popover, OverlayTrigger } from "react-bootstrap";
 
 function ExploreImage(props) {
   const popover = (
@@ -20,6 +20,10 @@ function ExploreImage(props) {
   );
 }
 
-ExploreImage.propTypes = {};
+ExploreImage.propTypes = {
+  title: PropTypes.string,
+  content: PropTypes.string,
+  alternate: PropTypes.string,
+};
 
 export default ExploreImage;
