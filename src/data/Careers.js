@@ -14,16 +14,108 @@ export const Careers = [
         content:
           "Zoologists study many different types of animals including lions",
       },
+      {
+        title: "lion",
+        image: Images.lion.image,
+        alternate: "Lion",
+        title: "Lion",
+        content:
+          "Zoologists study many different types of animals including lions",
+      },
+      {
+        title: "lion",
+        image: Images.lion.image,
+        alternate: "Lion",
+        title: "Lion",
+        content:
+          "Zoologists study many different types of animals including lions",
+      },
+      {
+        title: "lion",
+        image: Images.lion.image,
+        alternate: "Lion",
+        title: "Lion",
+        content:
+          "Zoologists study many different types of animals including lions",
+      },
     ],
   },
   {
     title: "Marine Biologist",
     buttonImg: Images.lion.image,
-    slug: "/explore",
+    slug: "marine-biologist",
+    images: [
+      {
+        title: "lion",
+        image: Images.lion.image,
+        alternate: "Lion",
+        title: "Lion",
+        content:
+          "Zoologists study many different types of animals including lions",
+      },
+      {
+        title: "lion",
+        image: Images.lion.image,
+        alternate: "Lion",
+        title: "Lion",
+        content:
+          "Zoologists study many different types of animals including lions",
+      },
+      {
+        title: "lion",
+        image: Images.lion.image,
+        alternate: "Lion",
+        title: "Lion",
+        content:
+          "Zoologists study many different types of animals including lions",
+      },
+      {
+        title: "lion",
+        image: Images.lion.image,
+        alternate: "Lion",
+        title: "Lion",
+        content:
+          "Zoologists study many different types of animals including lions",
+      },
+    ],
   },
   {
     title: "Archaeologist",
     buttonImg: Images.lion.image,
-    slug: "/explore",
+    slug: "archeologist",
+    images: [
+      {
+        title: "lion",
+        image: Images.lion.image,
+        alternate: "Lion",
+        title: "Lion",
+        content:
+          "Zoologists study many different types of animals including lions",
+      },
+      {
+        title: "lion",
+        image: Images.lion.image,
+        alternate: "Lion",
+        title: "Lion",
+        content:
+          "Zoologists study many different types of animals including lions",
+      },
+      {
+        title: "lion",
+        image: Images.lion.image,
+        alternate: "Lion",
+        title: "Lion",
+        content:
+          "Zoologists study many different types of animals including lions",
+      },
+      {
+        title: "lion",
+        image: Images.lion.image,
+        alternate: "Lion",
+        title: "Lion",
+        content:
+          "Zoologists study many different types of animals including lions",
+      },
+    ],
   },
 ];
