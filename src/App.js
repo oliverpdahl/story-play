@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import { Link, Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import LandingPage from "./components/LandingPage";
-import CareersPage from "./components/CareersPage";
+import CareersPage from "./components/CareersPage/CareersPage";
 import ExplorationPage from "./components/ExplorationPage";
 import NavBar from "./components/Navbar/NavBar";
 
