@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import lion from "../../images/lion.png";
 import { Container, Row, Col, Popover, OverlayTrigger } from "react-bootstrap";
 import ExploreImage from "./ExploreImage";
+import FlaticonAttribution from "../FlaticonAttribution";
 
 function ExplorationPage(props) {
   const listImages = props.career.images.map((image, index) => (
@@ -29,6 +30,7 @@ function ExplorationPage(props) {
           <Col xs={6}>{listImages[2]}</Col>
           <Col xs={6}>{listImages[3]}</Col>
         </Row>
+        <FlaticonAttribution />
       </Container>
     </div>
   );

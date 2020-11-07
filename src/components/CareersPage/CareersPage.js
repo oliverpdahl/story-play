@@ -9,7 +9,7 @@ import FlaticonAttribution from "../FlaticonAttribution";
 const listButtons = () => {
   return Careers.map((career) => (
     <CareerButton
-      to={career.slug}
+      to={`explore/${career.slug}`}
       title={career.title}
       image={career.buttonImg}
     />
