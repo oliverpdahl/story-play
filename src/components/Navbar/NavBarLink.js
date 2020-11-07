@@ -10,6 +10,10 @@ function NavBarLink(props) {
   );
 }
 
-NavBarLink.propTypes = {};
+NavBarLink.propTypes = {
+  key: PropTypes.number,
+  to: PropTypes.string,
+  title: PropTypes.string,
+};
 
 export default NavBarLink;
