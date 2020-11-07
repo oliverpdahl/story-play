@@ -1,33 +1,25 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { Nav, Navbar } from "react-bootstrap";
+import { NavLinks } from "../../data/NavLinks";
+import NavBarLink from "./NavBarLink";
 
-export default function Navbar() {
+const listLinks = () => {
+  return NavLinks.links.map((link, index) => (
+    <NavBarLink key={index} to={link.to} title={link.title} />
+  ));
+};
+
+export default function NavBar() {
   return (
-    <div>
-      <Navbar bg="light" expand="lg">
-        <Link to="/">
-          <Navbar.Brand href="#home">StoryPlay</Navbar.Brand>
-        </Link>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
-            <Link className="m-2 text-dark" to="/">
-              Home
-            </Link>
-            <Link className="m-2 text-dark" to="/careers">
-              Careers
-            </Link>
-            <Link className="m-2 text-dark" to="/explore">
-              Marine Biologist
-            </Link>
-            <Link className="m-2 text-dark" to="/explore">
-              Zoologist
-            </Link>
-            <Link className="m-2 text-dark" to="/explore">
-              Archeologist
-            </Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
-    </div>
+    <Navbar bg="light" expand="lg">
+      <Link to="/">
+        <Navbar.Brand href="#home">StoryPlay</Navbar.Brand>
+      </Link>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="mr-auto">{listLinks()}</Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 }

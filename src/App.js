@@ -4,11 +4,12 @@ import { Link, Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import LandingPage from "./components/LandingPage";
 import CareersPage from "./components/CareersPage";
 import ExplorationPage from "./components/ExplorationPage";
-import { Navbar, Nav } from "react-bootstrap";
+import NavBar from "./components/Navbar/NavBar";
 
 export default function App() {
   return (
     <Router>
+      <NavBar />
       <div>
         {/* Route components are rendered if the path prop matches the current URL */}
         <Route path="/careers">
