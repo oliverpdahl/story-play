@@ -6,14 +6,20 @@ import CareerButton from "./CareerButton";
 import { Careers } from "../../data/Careers";
 import FlaticonAttribution from "../FlaticonAttribution";
 
+const listButtons = () => {
+  return Object.keys(Careers).map((career) => (
+    <CareerButton
+      to={Careers[career].slug}
+      title={Careers[career].title}
+      image={Careers[career].buttonImg}
+    />
+  ));
+};
+
 export default function CareersPage() {
   return (
     <div className="px-5">
-      <CareerButton
-        to={Careers.zoologist.slug}
-        title={Careers.zoologist.title}
-        image={Careers.zoologist.buttonImg}
-      />
+      {listButtons()}
       <FlaticonAttribution />
     </div>
   );
