@@ -4,7 +4,7 @@ import { Route, BrowserRouter as Router } from "react-router-dom";
 import LandingPage from "./components/LandingPage";
 import CareersPage from "./components/CareersPage/CareersPage";
 import ExplorationPage from "./components/ExplorationPage/ExplorationPage";
-import NavBar from "./components/Navbar/NavBar";
+import NavBar from "./components/Navbar/Navbar";
 import { Careers } from "./data/Careers";
 
 export default function App() {
