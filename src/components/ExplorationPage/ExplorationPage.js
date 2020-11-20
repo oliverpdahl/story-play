@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Image } from "react-bootstrap";
 import ExploreImage from "./ExploreImage";
 import FlaticonAttribution from "../FlaticonAttribution";
 import "./ExplorationPage.css";
