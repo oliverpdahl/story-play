@@ -2,7 +2,7 @@ import React from "react";
 import CareerButton from "./CareerButton";
 import { Careers } from "../../data/Careers";
 import FlaticonAttribution from "../FlaticonAttribution";
-import Character from "../Character";
+import CharacterButton from "../CharacterPage/CharacterButton";
 
 const listButtons = () => {
   return Careers.map((career) => (
@@ -18,7 +18,7 @@ export default function CareersPage() {
   return (
     <div className="px-5">
       {listButtons()}
-      <Character/>
+      <CharacterButton />
       <FlaticonAttribution />
     </div>
   );
