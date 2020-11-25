@@ -1,7 +1,10 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Image } from "react-bootstrap";
 import ExploreImage from "./ExploreImage";
 import FlaticonAttribution from "../FlaticonAttribution";
+import "./ExplorationPage.css";
+import CharacterButton from "../CharacterPage/CharacterButton";
+
 
 function ExplorationPage(props) {
   const listImages = props.career.images.map((image, index) => (
@@ -13,25 +16,32 @@ function ExplorationPage(props) {
       alternate={image.alternate}
     />
   ));
+  const background = props.career.background;
   return (
     <div
-      style={{ height: "100vh", width: "100%" }}
-      className="align-middle pt-5"
+
     >
-      <Container className="align-middle" style={{ maxWidth: "650px" }}>
-        <h1 className="text-center">{props.career.title}</h1>
-        <Row>
-          <Col xs={6}>{listImages[0]}</Col>
-          <Col xs={6}>{listImages[1]}</Col>
-        </Row>
-        <Row>
-          <Col xs={6}>{listImages[2]}</Col>
-          <Col xs={6}>{listImages[3]}</Col>
-        </Row>
+      <Container fluid>
+      <h1 className="text-center">{props.career.title}</h1>
+        <div id="imageContainer" className="background">
+          <Image src={background} fluid/>
+          <div className="interactive-1 image">
+            {listImages[0]}
+          </div>
+          <div className="interactive-2 image">
+            {listImages[1]}
+          </div>
+          <div className="interactive-3 image">
+          {listImages[2]}
+            </div>
+          <div className="interactive-4 image">
+            {listImages[3]}
+          </div>
+        </div>  
+        <CharacterButton /> 
         <FlaticonAttribution />
       </Container>
     </div>
   );
 }
-
 export default ExplorationPage;

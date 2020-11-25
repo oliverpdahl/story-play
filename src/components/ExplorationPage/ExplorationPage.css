@@ -1,0 +1,53 @@
+
+  body {
+    color: rgb(0, 0, 0);
+    padding: 40px;
+    font-family: Arial;
+    text-align: center;
+  }
+  .background {
+    position: relative;
+    background-size: auto;
+  }
+  .selected{
+    box-shadow:0px 12px 22px 1px rgb(255, 221, 26);
+  }
+  .image{
+    position: absolute;
+    object-fit: fill;
+    height: auto;
+  }
+
+  .image:hover{
+    box-shadow:0px 12px 22px 1px rgb(255, 221, 26);
+  }
+
+  .image:active{
+    box-shadow:0px 12px 22px 1px rgb(255, 60, 26);
+  }
+
+  .interactive-1 {
+    max-width: 14%;
+    margin-left: 35%;
+    bottom: 30%;
+  }
+  .interactive-2 {
+    max-width: 12%;
+    margin-left: 10%;
+    top: 10%;
+  }
+  .interactive-3 {
+    max-width: 14%;
+    margin-left: 70%;
+    bottom: 50%;
+  }
+  .interactive-4 {
+    max-width: 12%;
+    left: 0px;
+    bottom: 0px;
+  }
+  .character {
+    max-width: 10%;
+    right: 0px;
+    bottom: 0px;
+  }
