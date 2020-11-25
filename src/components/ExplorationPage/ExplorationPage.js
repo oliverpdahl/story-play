@@ -3,6 +3,7 @@ import { Container, Image } from "react-bootstrap";
 import ExploreImage from "./ExploreImage";
 import FlaticonAttribution from "../FlaticonAttribution";
 import "./ExplorationPage.css";
+import CharacterButton from "../CharacterPage/CharacterButton";
 
 
 function ExplorationPage(props) {
@@ -36,10 +37,8 @@ function ExplorationPage(props) {
           <div className="interactive-4 image">
             {listImages[3]}
           </div>
-          <div className="character image">
-            {listImages[4]}
-          </div>
-        </div>   
+        </div>  
+        <CharacterButton /> 
         <FlaticonAttribution />
       </Container>
     </div>
