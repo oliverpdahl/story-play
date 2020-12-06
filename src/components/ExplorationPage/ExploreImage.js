@@ -2,8 +2,10 @@ import React, { useRef } from "react";
 import PropTypes from "prop-types";
 import { Popover, OverlayTrigger } from "react-bootstrap";
 import { AudioPlayerProvider, useAudioPlayer } from "react-use-audio-player";
+import { useCounterStore } from "../../store";
 
 function ExploreImage(props) {
+  const [count, setCount] = useCounterStore();
   const popover = (
     <Popover id="popover-basic">
       <Popover.Title as="h3">{props.title}</Popover.Title>
@@ -33,7 +35,10 @@ function ExploreImage(props) {
           src={props.image}
           alt={props.alternate}
           style={playing ? playingCS : notPlayingCS}
-          onClick={togglePlayPause}
+          onClick={() => {
+            togglePlayPause();
+            setCount(count + 1);
+          }}
         />
       </OverlayTrigger>
     );
