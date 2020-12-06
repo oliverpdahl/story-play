@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import PropTypes from "prop-types";
 import { Popover, OverlayTrigger } from "react-bootstrap";
-import soundfile from "../../audio/test.mp3";
 import { AudioPlayerProvider, useAudioPlayer } from "react-use-audio-player";
 
 function ExploreImage(props) {
@@ -41,7 +40,7 @@ function ExploreImage(props) {
   return (
     <div>
       <AudioPlayerProvider>
-        <ImageWithAudio file={soundfile} />
+        <ImageWithAudio file={props.audio} />
       </AudioPlayerProvider>
     </div>
   );

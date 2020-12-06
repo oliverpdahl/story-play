@@ -1,4 +1,5 @@
 import { Images } from "./Images";
+import { Audios } from "./Audios";
 
 export const Careers = [
   {
@@ -10,7 +11,7 @@ export const Careers = [
       {
         title: "lion",
         image: Images.lion.image,
-        audio: new Audio("../audio/test.mp3"),
+        audio: Audios.test,
         alternate: "Lion",
         title: "Lion",
         content:
