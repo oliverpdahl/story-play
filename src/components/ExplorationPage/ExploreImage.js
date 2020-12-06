@@ -18,8 +18,9 @@ function ExploreImage(props) {
       onend: () => console.log("sound has ended!"),
     });
 
+    // This is the shadow that goes behind the image on click
     const shadow = {
-      boxShadow: "0px 12px 22px 1px rgb(0,0,255)",
+      filter: "drop-shadow(1rem 1rem 1.2rem rgba(144, 238, 144, 0.7))",
     };
 
     const notPlayingCS = { width: "100%", maxHeight: "100%" };
