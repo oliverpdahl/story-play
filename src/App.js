@@ -7,6 +7,7 @@ import ExplorationPage from "./components/ExplorationPage/ExplorationPage";
 import NavBar from "./components/Navbar/Navbar";
 import { Careers } from "./data/Careers";
 import { CounterProvider } from "./store/index";
+import CharacterPage from "./components/CharacterPage";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="/careers">
             <CareersPage />
           </Route>
+          <Route path="/character" component={CharacterPage} exact />
           <Route
             exact
             path="/explore/:slug"
