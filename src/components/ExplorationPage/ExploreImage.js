@@ -19,12 +19,20 @@ function ExploreImage(props) {
       onend: () => console.log("sound has ended!"),
     });
 
+    const shadow = {
+      boxShadow: "0px 12px 22px 1px rgb(0,0,255)",
+    };
+
+    const notPlayingCS = { width: "100%", maxHeight: "100%" };
+
+    const playingCS = { ...shadow, ...notPlayingCS };
+
     return (
       <OverlayTrigger trigger="click" placement="bottom" overlay={popover}>
         <img
           src={props.image}
           alt={props.alternate}
-          style={{ width: "100%", maxHeight: "100%" }}
+          style={playing ? playingCS : notPlayingCS}
           onClick={togglePlayPause}
         />
       </OverlayTrigger>
