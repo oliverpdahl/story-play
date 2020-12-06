@@ -42,14 +42,6 @@ export const Careers = [
         title: "Binoculars",
         content: "Zoologists observe animals from afar using binoculars",
       },
-      {
-        title: "character",
-        image: Images.test_character.image,
-        alternate: "test_char",
-        audio: Audios.test,
-        title: "test_character",
-        content: "This is you!",
-      },
     ],
   },
   {
@@ -94,14 +86,6 @@ export const Careers = [
         content:
           "Marine Biologists must use submarines to explore the deepest depths of the ocean",
       },
-      {
-        title: "character",
-        image: Images.test_character.image,
-        alternate: "test_char",
-        audio: Audios.test,
-        title: "test_character",
-        content: "This is you!",
-      },
     ],
   },
   {
@@ -144,13 +128,6 @@ export const Careers = [
         title: "Fossil",
         content:
           "Archaeologists can find fossils, or the remains, of long extinct plants and animals",
-      },
-      {
-        title: "character",
-        image: Images.test_character.image,
-        alternate: "test_char",
-        title: "test_character",
-        content: "This is you!",
       },
     ],
   },
