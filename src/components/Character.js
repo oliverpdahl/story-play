@@ -5,7 +5,7 @@ export default function CharacterImage() {
   const [count, setCount] = useCounterStore();
   return (
     <div className="CharacterImage">
-      <p>You clicked {count} times</p>
+      <p>You have {count} stars</p>
       <img
         src={CharacterImages.test_character.image}
         alt={CharacterImages.test_character.alternate}
