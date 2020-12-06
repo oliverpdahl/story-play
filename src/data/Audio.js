@@ -1,3 +1,3 @@
-export const Audio = {
-  test: new Audio("/christmas.mp3"),
+export const Audios = {
+  test: new Audio("../audio/test.mp3"),
 };

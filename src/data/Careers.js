@@ -1,4 +1,5 @@
 import { Images } from "./Images";
+import { Audios } from "./Audio";
 
 export const Careers = [
   {
@@ -7,10 +8,10 @@ export const Careers = [
     background: Images.test_bg.image,
     slug: "zoologist",
     images: [
-      
       {
         title: "lion",
         image: Images.lion.image,
+        audio: Audios.test,
         alternate: "Lion",
         title: "Lion",
         content:
@@ -29,24 +30,21 @@ export const Careers = [
         image: Images.gps.image,
         alternate: "GPS",
         title: "GPS",
-        content:
-          "Zoologists track movements of animals using GPS",
+        content: "Zoologists track movements of animals using GPS",
       },
       {
         title: "binoculars",
         image: Images.binoculars.image,
         alternate: "Binoculars",
         title: "Binoculars",
-        content:
-          "Zoologists observe animals from afar using binoculars",
+        content: "Zoologists observe animals from afar using binoculars",
       },
       {
         title: "character",
         image: Images.test_character.image,
         alternate: "test_char",
         title: "test_character",
-        content:
-          "This is you!",
+        content: "This is you!",
       },
     ],
   },
@@ -93,8 +91,7 @@ export const Careers = [
         image: Images.test_character.image,
         alternate: "test_char",
         title: "test_character",
-        content:
-          "This is you!",
+        content: "This is you!",
       },
     ],
   },
@@ -117,8 +114,7 @@ export const Careers = [
         image: Images.brush.image,
         alternate: "Brush",
         title: "Brush",
-        content:
-          "Archaeologists use brushes to carefully uncover artifacts",
+        content: "Archaeologists use brushes to carefully uncover artifacts",
       },
       {
         title: "cave_painting",
@@ -141,8 +137,7 @@ export const Careers = [
         image: Images.test_character.image,
         alternate: "test_char",
         title: "test_character",
-        content:
-          "This is you!",
+        content: "This is you!",
       },
     ],
   },
