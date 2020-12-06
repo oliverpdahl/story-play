@@ -2,7 +2,7 @@ import React from "react";
 import { CharacterImages } from "../data/Character";
 import { useCounterStore } from "../store/index.js";
 export default function CharacterImage() {
-  const [count, setCount] = useCounterStore();
+  const [count] = useCounterStore();
   return (
     <div className="CharacterImage">
       <p>You have {count} stars</p>
