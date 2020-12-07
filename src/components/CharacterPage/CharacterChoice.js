@@ -1,12 +1,12 @@
 import React from "react";
 import { useCharacterStore } from "../../store/characterContext";
 import { useCounterStore } from "../../store/counterContext.js";
-function CharacterButton(props) {
+function CharacterChoice(props) {
   const [character] = useCharacterStore();
   const [count] = useCounterStore();
-  return <img src={props.image} alt={props.alternate} />;
+  return <img src={props.image.image} alt={props.image.alternate} />;
 }
 
-CharacterButton.propTypes = {};
+CharacterChoice.propTypes = {};
 
-export default CharacterButton;
+export default CharacterChoice;
