@@ -1,7 +1,7 @@
 import lion from "../images/lion.png";
 import zoology_background from "../images/zoology_background.jpg";
 import marine_background from "../images/marine_background.jpg";
-import arch_background from "../images/cave_real.jpg";
+import arch_background from "../images/arch_background_real.jpg";
 import test_bg from "../images/test.jpg";
 import track from "../images/track.png";
 import gps from "../images/gps.png";
@@ -12,7 +12,7 @@ import dolphin from "../images/dolphin.png";
 import boat from "../images/boat.png";
 import pottery from "../images/pottery.png";
 import shell from "../images/shell.png";
-import brush from "../images/brush.png";
+import brush from "../images/brush_real.png";
 import actor from "../images/actor.png";
 import doctor from "../images/doctor.png";
 import farmer from "../images/farmer.png";
