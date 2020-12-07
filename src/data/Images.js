@@ -10,14 +10,14 @@ import scuba from "../images/scuba.png";
 import submarine from "../images/submarine.png";
 import dolphin from "../images/dolphin.png";
 import boat from "../images/boat.png";
-import pottery from "../images/pottery.png";
-import shell from "../images/shell.png";
+import pottery from "../images/pottery_real.png";
+import shell from "../images/shell_real.png";
 import brush from "../images/brush_real.png";
 import actor from "../images/actor.png";
 import doctor from "../images/doctor.png";
 import farmer from "../images/farmer.png";
 import waiter from "../images/waiter.png";
-import cave_painting from "../images/cave-painting.png";
+import cave_painting from "../images/cave-painting_real.png";
 
 export const Images = {
   lion: { image: lion, alternate: "Lion" },
