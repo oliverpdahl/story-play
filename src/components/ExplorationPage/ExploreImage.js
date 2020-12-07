@@ -37,7 +37,7 @@ function ExploreImage(props) {
           style={playing ? playingCS : notPlayingCS}
           onClick={() => {
             togglePlayPause();
-            setCount(count + 1);
+            playing || setCount(count + 1);
           }}
         />
       </OverlayTrigger>
