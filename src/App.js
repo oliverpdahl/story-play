@@ -8,7 +8,7 @@ import NavBar from "./components/Navbar/Navbar";
 import { Careers } from "./data/Careers";
 import { CounterProvider } from "./store/counterContext";
 import { CharacterProvider } from "./store/characterContext";
-import CharacterPage from "./components/CharacterPage";
+import CharacterPage from "./components/CharacterPage/CharacterPage";
 
 export default function App() {
   return (

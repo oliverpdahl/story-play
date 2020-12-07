@@ -1,6 +1,6 @@
 import React from "react";
-import { CharacterImages } from "../data/Character";
-import { useCounterStore } from "../store/counterContext.js";
+import { CharacterImages } from "../../data/Character";
+import { useCounterStore } from "../../store/counterContext.js";
 export default function CharacterPage() {
   const [count] = useCounterStore();
   return (
