@@ -11,14 +11,19 @@ function CharacterButton() {
   return (
     <Link to={"/character"}>
       <div className="py-3">
-        <p>You have {count} stars</p>
         <Button
           block
           style={{ height: "20vh", maxWidth: "350px" }}
           className="btn-info mx-auto"
           onClick={() => setBacklink(location.pathname)}
         >
-          <img src={character.image} />
+          <div style={{ maxWidth: "100%", height: "100%" }}>
+            <p>You have {count} stars</p>
+            <img
+              src={character.image}
+              style={{ maxWidth: "100%", height: "70%" }}
+            />
+          </div>
         </Button>
       </div>
     </Link>
