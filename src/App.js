@@ -9,13 +9,12 @@ import { Careers } from "./data/Careers";
 import { CounterProvider } from "./store/counterContext";
 import { CharacterProvider } from "./store/characterContext";
 import CharacterPage from "./components/CharacterPage/CharacterPage";
-const BrowserHistory = require("react-router/lib/BrowserHistory").default;
 
 export default function App() {
   return (
     <CounterProvider>
       <CharacterProvider>
-        <Router history={BrowserHistory}>
+        <Router>
           <NavBar />
           <div>
             {/* Route components are rendered if the path prop matches the current URL */}
