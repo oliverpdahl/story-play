@@ -47,7 +47,7 @@ export const Careers = [
   {
     title: "Marine Biologist",
     buttonImg: Images.dolphin.image,
-    background: Images.test_bg.image,
+    background: Images.marine_background.image,
     slug: "marine-biologist",
     images: [
       {
