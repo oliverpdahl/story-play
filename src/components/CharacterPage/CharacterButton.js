@@ -11,9 +11,7 @@ function CharacterButton() {
           block
           style={{ height: "20vh", maxWidth: "350px" }}
           className="btn-info mx-auto"
-        >
-          <CharacterPage />
-        </Button>
+        ></Button>
       </div>
     </Link>
   );
