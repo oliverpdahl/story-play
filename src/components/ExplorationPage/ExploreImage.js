@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import PropTypes from "prop-types";
 import { Popover, OverlayTrigger } from "react-bootstrap";
 import { AudioPlayerProvider, useAudioPlayer } from "react-use-audio-player";
-import { useCounterStore } from "../../store";
+import { useCounterStore } from "../../store/counterContext";
 
 function ExploreImage(props) {
   const [count, setCount] = useCounterStore();

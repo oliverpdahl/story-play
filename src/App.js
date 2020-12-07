@@ -6,7 +6,7 @@ import CareersPage from "./components/CareersPage/CareersPage";
 import ExplorationPage from "./components/ExplorationPage/ExplorationPage";
 import NavBar from "./components/Navbar/Navbar";
 import { Careers } from "./data/Careers";
-import { CounterProvider } from "./store/index";
+import { CounterProvider } from "./store/counterContext";
 import CharacterPage from "./components/CharacterPage";
 
 export default function App() {
