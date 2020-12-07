@@ -91,7 +91,7 @@ export const Careers = [
   {
     title: "Archaeologist",
     buttonImg: Images.pottery.image,
-    background: Images.test_bg.image,
+    background: Images.arch_background.image,
     slug: "archeologist",
     images: [
       {
