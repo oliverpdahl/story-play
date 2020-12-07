@@ -10,4 +10,4 @@ export const CharacterProvider = (props) => {
     ></CharacterContext.Provider>
   );
 };
-export const useCounterStore = () => useContext(CharacterContext);
+export const useCharacterStore = () => useContext(CharacterContext);
