@@ -5,7 +5,7 @@ export const Careers = [
   {
     title: "Zoologist",
     buttonImg: Images.lion.image,
-    background: Images.test_bg.image,
+    background: Images.zoology_background.image,
     slug: "zoologist",
     images: [
       {
