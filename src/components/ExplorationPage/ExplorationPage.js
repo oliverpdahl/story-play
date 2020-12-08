@@ -21,6 +21,7 @@ function ExplorationPage(props) {
     <div>
       <Container fluid>
         <h1 className="text-center">{props.career.title}</h1>
+        <CharacterButton />
         <div id="imageContainer" className="background">
           <Image src={background} fluid />
           <div className="interactive-1 image">{listImages[0]}</div>
@@ -28,7 +29,6 @@ function ExplorationPage(props) {
           <div className="interactive-3 image">{listImages[2]}</div>
           <div className="interactive-4 image">{listImages[3]}</div>
         </div>
-        <CharacterButton />
         <FlaticonAttribution />
       </Container>
     </div>

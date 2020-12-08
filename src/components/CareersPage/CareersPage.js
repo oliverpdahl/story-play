@@ -17,8 +17,8 @@ const listButtons = () => {
 export default function CareersPage() {
   return (
     <div className="px-5">
-      {listButtons()}
       <CharacterButton />
+      {listButtons()}
       <FlaticonAttribution />
     </div>
   );
