@@ -11,7 +11,7 @@ export const Careers = [
       {
         title: "lion",
         image: Images.lion.image,
-        audio: Audios.test,
+        audio: Audios.track,
         alternate: "Lion",
         title: "Lion",
         content:
@@ -21,7 +21,7 @@ export const Careers = [
         title: "track",
         image: Images.track.image,
         alternate: "Animal Track",
-        audio: Audios.test,
+        audio: Audios.track,
         title: "Animal Track",
         content:
           "Zoologists can look at the tracks of animals to study behaviours",
