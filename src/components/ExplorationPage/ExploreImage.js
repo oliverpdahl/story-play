@@ -30,17 +30,15 @@ function ExploreImage(props) {
     const playingCS = { ...shadow, ...notPlayingCS };
 
     return (
-      <OverlayTrigger trigger="click" placement="bottom" overlay={popover}>
-        <img
-          src={props.image}
-          alt={props.alternate}
-          style={playing ? playingCS : notPlayingCS}
-          onClick={() => {
-            togglePlayPause();
-            playing || setCount(count + 1);
-          }}
-        />
-      </OverlayTrigger>
+      <img
+        src={props.image}
+        alt={props.alternate}
+        style={playing ? playingCS : notPlayingCS}
+        onClick={() => {
+          togglePlayPause();
+          playing || setCount(count + 1);
+        }}
+      />
     );
   };
   return (
