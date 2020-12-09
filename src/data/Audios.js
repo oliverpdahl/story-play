@@ -11,6 +11,7 @@ import pottery from "../audio/pottery.m4a";
 import scuba from "../audio/scuba.m4a";
 import shell from "../audio/shell.m4a";
 import submarine from "../audio/submarine.m4a";
+import welcome from "../audio/Welcome to StoryPlay.m4a";
 
 export const Audios = {
   test: test,
@@ -26,4 +27,5 @@ export const Audios = {
   scuba: scuba,
   shell: shell,
   submarine: submarine,
+  welcome: welcome,
 };
